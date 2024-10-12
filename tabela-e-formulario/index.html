@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela e Formulários</title>
+</head>
+<body>
+    <table width="600" border="1"> <!--  tag para iniciar uma tabela  --> <!--  width="600" para definir a largura da tabela e Border é a borda da tabela -->
+        <caption>Informações do Usuário</caption> <!--  tag para o título da tabela  -->
+        <thead> <!--  tag para o cabeçalho da tabela  -->
+            <tr>
+                <th>Nome</th> <!--  tag para a linha do cabeçalho da tabela. Nome de cada item  -->
+                <th>Idade</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- Corpo da tabela -->
+            <tr>
+                <td>João</td> <!-- tag para o corpo da tabela -->
+                <td>25</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>35</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Pammelli</td>
+                <td>20</td>
+                <td>Psicóloga</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">Primeira tabela emitida</td> <!-- colspan é o número de colunas que o item vai ocupar -->
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <!-- Formulário -->
+   
+    <form> <!--  Tag que inicializa o formulário  -->
+
+        <input type="text"> <!--  Tag para criar um campo de texto  -->
+        <input type="password"><!--  Tag para criar um campo de senha  -->
+        <input type="email"> <!--  Tag para criar um campo de email  -->
+        <input type="checkbox"> <!--  Tag para criar um campo de checkbox,marcar  -->
+        <input type="radio"> <!--  Tag para criar um campo de radio,escolher  -->
+        <input type="date"> <!--  Tag para criar um campo de data. Ano,mes,dia  -->
+        <input type="submit" value="Enviar"> <!--  Tag para criar um botão de envio  -->
+        <textarea>Area de Texto</textarea>
+
+    </form>
+</body>
+</html>
