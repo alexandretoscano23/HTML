@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandre Toscano Diniz">
+    <meta name="description" content="O site oficial de vendas de Taco">
+    <link rel="icon" href="../taco-shop/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../taco-shop/css/style.css">
+    <title>Taco Shop</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+
+    <header>
+        <h1>Bem-Vindo ao Taco Shop!</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre <abbr title="Taco Shop">TS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu">Nosso Menu</a>
+                </li>
+                <li>
+                    <a href="../taco-shop/horas.html">Horário de Funcionamento</a>
+                </li>
+                <li>
+                    <a href="../taco-shop/contato.html">Nos Contate</a>
+                </li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="../taco-shop/imagens/taco-shop.jpg" alt="Tacos" title="Nós amamos tacos!" width="300" height="260">
+
+            <figcaption>
+                <p>Os melhores tacos da cidade</p>
+            </figcaption>
+        </figure>
+    </header>
+
+    <hr>
+    <br>
+
+    <!-- Conteúdo -->
+
+    <main>
+        <article id="sobre">
+            <h2>Sobre <abbr title="Taco Sho">TS</abbr></h2>
+
+            <p>
+                <abbr title="Taco Sho">TS</abbr> Foi criada em <time datetime="2022">2022</time>. Nossa loja foi contruída  de um <strong>amor por tacos</strong>🌮🌮🌮 . Nossa loja adiciona um lugar único e interessante à nossa pequena cidade
+            </p>
+
+            <aside>
+                <h3>Curiosidade sobre Tacos</h3>
+
+                <details>
+                    <summary>Quando os tacos apareceram pela primeira vez no Brasil?</summary>
+
+                    <p>
+                        Os tacos apareceram pela primeira vez no Brasil em <time datetime="1987">1987</time>, quando a primeira loja de tacos foi aberta em São Paulo.
+
+                        <br>
+
+                        <cite> 
+                            <p>Wikipédia :</p>
+                            <a href="https://pt.wikipedia.org/wiki/Taco_(culin%C3%A1ria)">Primeira loja de <strong>Tacos</strong> do Brasil</a>
+                        </cite>
+                    </p>
+                </details>
+            </aside>
+        </article>
+
+        <hr>
+        <br>
+
+        <article id="menu">
+            <h2>Nosso Menu</h2>
+
+            <table width="400" border="1">
+                <caption>Nossos Tacos</caption>
+
+                <thead>
+                    <tr>
+                        <th>Tacos</th>
+                        <th scope="col"><abbr title="Quantidade">QNT</abbr></th> <!-- Especifica que o cabeçalho se refere a uma coluna inteira. O conteúdo desta célula será o título para todos os dados da coluna abaixo dela -->
+                        <th scope="col">Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Crocante</th>
+                        <td>1</td>
+                        <td>R$ 4.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>R$ 8.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>R$ 16.00</td>
+                    </tr>
+                    <!-- Macio -->
+                    <tr>
+                        <th scope="row" rowspan="3">Macio</th>
+                        <td>1</td>
+                        <td>R$ 6.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>R$ 12.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>R$ 18.00</td>
+                    </tr>
+                </tbody>
+                <tfoot align="center">
+                    <tr>
+                        <td colspan="3">Batatas &amp; Salsa R$ 2.00</td> <!-- &amp - ícone de "&" (e) -->
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br>
+
+            <p>
+                <a href="#">Voltar para o Topo</a>
+            </p>
+        </article>
+    </main>
+
+    <hr>
+    <br>
+
+    <footer>
+        <p>Copyright &copy; Taco Shop</p>
+    </footer>
+    
+</body>
+</html>
