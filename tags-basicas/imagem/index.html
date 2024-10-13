@@ -7,16 +7,25 @@
 </head>
 <body>
     <h1>Sobre a tag IMG</h1>
+    <p>Para colocar uma imagem no site, use a tag <code>&lt;img&gt;</code></p> <!-- <code> é uma tag para colocar um código no texto. &lt - representação para o símbolo de '<' menor que, e &gt '>' maior que -->
+        <hr>
+        <br>
 
     <!-- Carregando uma imagem externa com um link de uma img do google -->
 
     <img src="https://s2-vidadebicho.glbimg.com/fSsrOjMLVrKAwwHMJsbKkzvru9Y=/0x0:1200x916/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fb623579cd474803aedbbbbae014af68/internal_photos/bs/2022/l/7/grDtwVSMWPwHskhvN4Gw/2022-03-04-portrait-dog-pet-home-animal-pitbull-foster-adopt-270481.jpeg" alt="Pitbull,raça de cachorro"> <!-- img é a tag para imagem. src é o atributo para colocar o link da imagem pega do google. alt é o atributo para que,casoa imagem não for carregada ou alguém usar leitor de texto no site,essa mensagem será exibida. -->
+
+    <hr>
+    <br>
 
 <!-- ______________________________________________________________________________________________________________________ -->
  
     <!-- Carregando uma imagem interna em uma pasta -->
 
     <img src="../imagem/imagem-cachorro/samoieda.jpg" alt="Samoieda,raça de cachorro"> <!-- O ../ serve para acessar a pasta onde a pasta dele está guardada (imagem) e a pasta do index (imagem-cachorro) e, por fim, a imagem -->
+
+    <hr>
+    <br>
 
 <!-- ______________________________________________________________________________________________________________________ -->
 
@@ -28,6 +37,9 @@
 
     <!-- width e height são atributos para definir a largura e altura da imagem. -->
 
+    <hr>
+    <br>
+
 <!-- ______________________________________________________________________________________________________________________ -->
 
     <h1>Atributos importantes</h1>
@@ -37,14 +49,33 @@
 
     <!-- Title - ao passar o mouse or cima da imagem exibe um título-->
 
+    <hr>
+    <br>
+
 <!-- ______________________________________________________________________________________________________________________ -->
 
     <h1>Todos os atributos Juntos</h1>
+
     <img src="../imagem/imagem-cachorro/samoieda.jpg" alt="Samoieda,raça de cachorro" width="800px" height="600px" title="Samoieda"> 
 
+    <hr>
+    <br>
 <!-- ______________________________________________________________________________________________________________________ -->
 
-    <img src="imagem-cachorro/samoieda.jpg" alt="samoieda" loading="lazy">
+    <h1>Atributo Loading</h1>
+
+    <img src="imagem-cachorro/samoieda.jpg" alt="samoieda" loading="lazy"> <!-- loading="lazy" é um atributo que faz com que a imagem só seja carregada quando o usuário chegar perto dela -->
+
+    <hr>
+    <br>
+<!-- ______________________________________________________________________________________________________________________ -->
+
+    <h1>Tag Figure e Figcaption</h1>
+
+    <figure>  <!-- Forma semânticamente correta de agrupar um conteúdo autônomocomo imagem, diagrama ou gráfico -->
+        <img src="../imagem/imagem-cachorro/samoieda.jpg" alt="samoieda">
+        <figcaption>Um belo cachorro da raça Samoieda.</figcaption> <!-- figcaption é uma tag para legendar a imagem -->
+    </figure>
 
 </body>
 </html>

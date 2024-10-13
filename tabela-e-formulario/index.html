@@ -6,8 +6,10 @@
     <title>Tabela e Formulários</title>
 </head>
 <body>
+    <h1>Tabelas</h1>
+
     <table width="600" border="1"> <!--  tag para iniciar uma tabela  --> <!--  width="600" para definir a largura da tabela e Border é a borda da tabela -->
-        <caption>Informações do Usuário</caption> <!--  tag para o título da tabela  -->
+        <caption><h3>Informações do Usuário</h3></caption> <!--  tag para o título da tabela  -->
         <thead> <!--  tag para o cabeçalho da tabela  -->
             <tr>
                 <th>Nome</th> <!--  tag para a linha do cabeçalho da tabela. Nome de cada item  -->
@@ -39,6 +41,70 @@
     </table>
 
     <br>
+
+       <!-- Rotina-->
+
+       <table width="600" border="1">
+        <caption><h3>Rotina</h3></caption>
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Atividade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><time datetime="05:00">05:00</time></td>
+                <td>Acordar</td>
+            </tr>
+            <tr>
+                <td><time datetime="06:00">06:00</time></td>
+                <td>Tomar banho</td>
+            </tr>
+            <tr>
+                <td><time datetime="08:00">08:00</time></td>
+                <td>Tomar Café</td>
+            </tr>
+            <tr>
+                <td><time datetime="09:30">09:30</time> - <time datetime="11.00">11:00</time></td>
+                <td>Academia</td>
+            </tr>
+            <tr>
+                <td><time datetime="12:00">12:00</time></td>
+                <td>Almoçar</td>
+            </tr>
+            <tr>
+                <td><time datetime="14:00">14:00</time> - <time datetime="19:00">19:00</time></td>
+                <td>Estudar</td>
+            </tr>
+            <tr>
+                <td><time datetime="19:30">19:30</time></td>
+                <td>Jantar</td>
+            </tr>
+            <tr>
+                <td><time datetime="20:30">20:30</time> - <time datetime="21:00">21:00</time></td>
+                <td>Ler</td>
+            </tr>
+            <tr>
+                <td><time datetime="22:00">22:00</time></td>
+                <td>Dormir</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Nos Tempos Livres</td> <!-- rowspan - número de linhas para serem ocupadas -->
+                <td>Lazer</td>
+            </tr>
+            <tr>
+                <td>Descansar</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"> Repetir Processo</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h1>Formulários</h1>
     <!-- Formulário -->
    
     <form> <!--  Tag que inicializa o formulário  -->
@@ -50,8 +116,90 @@
         <input type="radio"> <!--  Tag para criar um campo de radio,escolher  -->
         <input type="date"> <!--  Tag para criar um campo de data. Ano,mes,dia  -->
         <input type="submit" value="Enviar"> <!--  Tag para criar um botão de envio  -->
+        <input type="tel"> <!--  Tag para criar um campo de telefone  -->
         <textarea>Area de Texto</textarea>
 
+    </form>
+
+    <hr>
+    <br>
+
+    <h1>Contatar</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Informações Pessoais</legend> <!--  Tag para criar um título para o fieldset  -->
+            <p>
+                <label for="firstname">Primeiro Nome:</label> <!--  Tag para criar um rótulo  -->
+                <input type="text" name="firstname" id="firstname" placeholder="Alexandre" autocomplete="on" required autofocus>
+            </p><!-- placeholder -   Tag para criar um campo de texto dentro do input. E o autocomplete=on, permite que o navegador mostre as sugestões que o usuário havia colocado. No off não aparece. Required - o usuário deve preencher o campo antes de enviar. Autofocus - o foco fica automático já no campo de input  -->
+            <p>
+                <label for="lastname">Segundo Nome:</label> <!--  Tag para criar um rótulo  -->
+                <input type="text" name="lastname" id="lastname" placeholder="Toscano Diniz" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="lastname">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="*******" autocomplete="off" required>
+            </p>
+            <p>
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" placeholder="(83)1123456" autocomplete="on" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}"> <!-- pattern - define um padrão que o valor inserido pelo usuário deve seguir. [0-9] - qualquer dígito de 0 a 9. {3} - três dígitos. {3} - mais três dígitos e {4} - mais quatro dígitos -->
+            </p>
+            <p>
+                <label for="decade">Década:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="1980"><!-- min - valor mínimo para este campo. max - valor máximo. step - incremento ou decremento de "10" quando o usuário for selecionando. value - valor inicial do campo-->
+            </p>
+            <p>
+                <label for="coffe">Café Favorito:</label>
+                <select name="cofee" id="cofee" >
+                    <optgroup label="Café">
+                        <option value="normal" selected>Café Normal</option>
+                        <option value="cafe gelado">Café Gelado</option>
+                    </optgroup>
+                    <optgroup label="Drinks expressos">
+                        <option value="cafe com leite">Café com Leite</option>
+                        <option value="expresso">Café Expresso</option>
+                        <option value="capuccino">Capuccito</option>
+                    </optgroup>
+                    <option value="outro">Outro</option>
+                </select> <!-- select - campos para selecionar. options - opções dadas para serem selecionadas. select - opção que já aparece selecionada. optgroup - separa um grupo de elementos que façam parte dos mesmos tipos. label - para dar o nome dos grupos -->
+            </p>
+        </fieldset> <!-- fieldset - usada para agrupar elementos relacionados em um formulário. Cria uma borda visual e pode ser usada para organizar elementos. -->
+
+        <br>
+
+        <fieldset>
+            <legend>Qual a sua comida favorita?</legend>
+            <p>
+                <input type="radio" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+            </p>
+
+            <p>
+                <input type="radio" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+            </p>
+
+            <p>
+                <input type="radio" name="food" id="outro" value="outro">
+                <label for="outro">Outro</label>
+            </p>
+
+            <!-- quando coloca os mesmos nomes nos radios,quando selecionar outro elemento,não vão ficar marcados dois de uma vez,mas sim,tira o que está marcado e seleciona o outro -->
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Escreva a sua Mensagem:</legend>
+            <label for="mensagem">Sua Mensagem:</label>
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="mensagem"></textarea>
+        </fieldset> <!-- cols - numero de colunas. rows - linhas -->
+
+        <br>
+
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântica</title>
+</head>
+<body>
+    <header> <!-- Cabeçalho do site  -->
+        <div>
+            <h1>Cabeçalho</h1>
+
+            <nav aria-label="primeira-navegação"> <!-- Acessibilidade caso o usuário esteja no site por um leitor de tela,e saber que é a navegação primária do site -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#local">Local</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+    <br>
+
+    <!-- Artigo -->
+
+    <article> <!-- Adicionar algum artigo -->
+        <h1>O HTML</h1>
+
+        <p>HTML é a sigla para HyperText Markup Language, ou Linguagem de Marcação de Hipertexto em português. É a linguagem padrão utilizada para criar a estrutura e o conteúdo de páginas da web.</p>
+
+        <figure>
+            <img src="https://cdn-icons-png.freepik.com/512/3128/3128323.png" alt="Logo do HTML" width="100px" title="Logo do HTML">
+            <figcaption>Logo do <abbr title="HyperText Markup Language">HTML</abbr></figcaption>
+        </figure>
+
+        <br>
+
+        <h2>Pode Conter:</h2>
+
+        <ul>
+            <li>Tags <u>para motores de busca</u></li>
+            <li>Tags <u>para adicionar elementos visíveis no seu site</u></li>
+            <li>Links para diversos sites ou arquivos</li>
+        </ul>
+
+        <p>Em resumo, o HTML é a linguagem fundamental para contruir páginas web. Ele fornece as ferramentas básicas para criar a estrutura e o conteúdo de qualquer site que você visita na internet.</p>
+    </article>
+
+
+    <br>
+
+    <!-- Informações relacionadas ao artigo -->
+
+    <aside> <!--Conteúdo relacionado ao principal,usado como anúncios ou informações relacionadas  -->
+        <h1>Informações Relacionadas</h1>
+
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">W3C</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Mozilla</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/HTML5">Wikipédia</a></li>
+        </ul>
+
+        <br>
+
+        <p>Estes são alguns links que te direcionam a páginas que explicam a nova versão do html, o <strong>HTML5</strong></p>
+
+        <details> <!-- engloba todos os elementos que deseja mostar ou escondre -->
+            <summary>Dica</summary> <!--quando o o título é clicado, mostra o texto abaixo -->
+            <p>A vários sites que disponibilizam arquivos e notícias que vão te mostrar como o html evoluiu nestes anos!</p>
+            <p>Fique por dentro de tudo e <mark>se atualize constantemente</mark>!</p> <!-- mark - adiciona uma marca igual a um marca-texto -->
+        </details>
+    </aside>
+
+    <hr>
+    <br>  
+
+    <!-- Conteúdo principal da página -->
+
+    <main> <!-- tag de conteúdo principal da página -->
+        <section id="sobre"> <!-- Ao colocar o id com o mesmo nome do link com a #,o link será direcionado a esta section -->
+
+            <!-- Sobre -->
+            <h1>Sobre</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, ex. Iste maxime deserunt laboriosam adipisci, facere reprehenderit magnam at minus quo tempora, quibusdam non fuga corrupti. Debitis animi aliquam aspernatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid illo earum nam, porro eum officiis placeat quis distinctio sint libero iste sunt fugiat sapiente. Fugit labore doloribus dignissimos? Ab, nihil?</p>
+        </section>
+
+        <hr>
+        <br>
+
+        <!-- Nosso endereço -->
+        <section id="local">
+            <h1>Nosso Endereço</h1>
+
+            <address>
+                <p>Rua dos Coqueiros,620</p>
+                <p>Em frente ao shopping Manaíra</p>
+                <p>João Pessoa - PB</p>
+            </address>
+        </section>
+    </main>
+
+   <hr>
+    <br>
+
+    <!--Rodapé-->
+
+    <footer>
+        <p>Todos os direitos reservados a  Alexandre Toscano Diniz.&copy;</p>
+        <p>Site criado em <time datetime="2024-12-10">12 de outubro de 2024.</time></p> <!-- time - tag para data e hora -->
+    </footer> <!-- &copy - símbolo de copyright-->
+</body>
+</html>
