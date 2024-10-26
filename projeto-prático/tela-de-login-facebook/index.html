@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Facebook - login</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-bg">
+        <div class="container"> 
+            <h2>Facebook</h2>
+            
+            <div class="form">
+                <form action="">
+                    <div class="email-phone">
+                        <!-- email or Phone -->
+                        <label for="email">Email or Phone:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <!-- password -->
+                    <div class="password"> 
+                        <label for="password">password:</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <!-- button -->
+                    <div>
+                        <button value="action" class="button1">Send</button>
+                    </div>
+                </form>
+            </div><!-- form -->
+        </div><!-- container-header -->
+    </header>
+
+    <!-- main -->
+     <main>
+        <div class="container-main">
+            <div class="container-facebook">
+                <figure>
+                    <img src="imagens/facebook.svg" alt="facebook">
+                    <p>
+                        Facebook helps you connect and share with the people in your life.
+                    </p>
+                </figure>
+            </div><!--Container-facebook-->
+
+            <!-- section -->
+            <section>
+                <div class="container-section-form">
+                    <h1>Open an Account</h1>
+                    <p>It's free and always will be.</p>
+                    <form action="">
+                             <div>
+                                <!-- name and last name -->
+                                 <div class="name-lastname">
+                                     <input type="text" name="name" id="name" placeholder="name">
+                                     <input type="text" name="name" id="name" placeholder="last name">
+                                 </div>
+                                 <!-- email or phone -->
+                                 <div class="email-phone-sec">
+                                    <input type="text" name="email-phone" id="email-phone" placeholder="cell or phone">
+                                </div>
+                                <!-- new password -->
+                                <div class="new-password">
+                                    <input type="password" name="password" id="password" placeholder="new password">
+                                </div>
+                                <br>
+                                <!-- data -->
+                                <div class="data">
+                                    <label for="data">Date of birth:</label>
+                                    <br>
+                                    <input type="date" name="data" id="data">
+                                 </div>
+                                 <br>
+                                <!-- gender -->
+                                 <div>
+                                    <h3>Your Gender</h3>
+                                    <select name="gender" id="gender">
+                                        <option value="masc" selected>masc</option>
+                                        <option value="fem">fem</option>
+                                    </select>
+                                 </div>
+
+                                 <br>
+
+                                 <!-- button -->
+                                 <div>
+                                    <button value="action" class="button2">Send</button>
+                                 </div>
+                                
+                             </div>    
+                    </form>
+                </div>
+            </section>
+        </div><!-- container main -->
+     </main>
+
+    <footer>
+        <p>- Projeto prático - feito por: Alexandre Toscano diniz - 2024 &copy;</p>
+    </footer>
+</body>
+</html>

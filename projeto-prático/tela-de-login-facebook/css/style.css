@@ -1,0 +1,170 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* cores do site */
+:root{
+    --dark-gray: #222;
+    --dark-blue:#3b5998;
+    --light-blue:#8b9dc3;
+    --medium-blue: #dfe3ee;
+    --light-gray:#f7f7f7;
+    --white:#fff;
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    font-family: "Roboto";
+}
+
+/* bg header */
+.header-bg{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1.5rem;
+}
+
+/* div-container */
+.container{
+    display: flex;
+    justify-content:space-between ;
+    max-width: 1200px;
+    padding: 0 2%; /* responsive */
+    margin: 0 auto;
+}
+
+/* h2 */
+.container h2{
+    font-size:2rem ;
+}
+
+/* email or phone */
+.email-phone,
+.password{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* imput */
+input[type=text],
+input[type=password]{
+    width: 70%;
+    padding:0.2rem 1rem;
+    margin-top: 1%;
+}
+
+input[type=text]:focus,
+input[type=password]:focus{
+    outline: none;
+}
+
+.button1{
+    background-color: var(--medium-blue);
+    margin-top: 25%;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button1:hover{
+    background-color: var(--light-blue);
+}
+
+.container-facebook{
+    margin-top: 10%;
+}
+
+.container-facebook img{
+    width: 50%;
+    margin-left: 10%;
+}
+
+.container-facebook p{
+    max-width: 900px;
+    font-size: 1.2rem;
+    margin-left: 14%;
+    width: 300px;
+}
+
+.container-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.container-section-form h1{
+    font-size: 2rem;
+}
+
+.container-section-form p{
+    font-size: 1.2rem;
+    margin-left: 0.8%;
+}
+
+.name-lastname{
+    display: flex;
+    gap: 6px;
+    margin-top: 3%;
+   
+}
+
+.name-lastname input{
+    padding: 0.3rem;
+    width: 50%;
+}
+
+.email-phone-sec input,
+.new-password input{
+    padding: 0.3rem;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.data input{
+    margin-top: 2%;
+    padding: 0.2rem 1rem;
+}
+
+select{
+    margin-top: 3%;
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: var(--dark-blue);
+    border: none;
+    padding: 0.5rem 2.5rem;
+    color: var(--white);
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.63);
+}
+
+footer{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
